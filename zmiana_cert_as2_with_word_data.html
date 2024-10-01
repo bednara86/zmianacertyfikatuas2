@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmiana certyfikatu AS2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+        }
+        header {
+            padding: 20px 0;
+        }
+        section {
+            margin: 20px;
+            text-align: left;
+            width: 80%;
+            display: inline-block;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            background-color: #ddd;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/mnt/data/obraz.png" alt="Editel Logo">
+        <h1>Zmiana certyfikatu AS2</h1>
+    </header>
+    
+    <section>
+        <p>
+            Zmiana certyfikatu AS2 – (przykładowa data zmiany)<br><br>
+            Jeśli Państwo wysyłają pliki danych za pośrednictwem AS2 prosimy zastąpić nasz wygasający certyfikat. 
+            Najczęściej zadawane pytania są dostępne nieco bardziej szczegółowo w tym artykule.<br>
+            Editel Polska będzie zmieniał w środowisku produkcyjnym jak i testowym wygasające certyfikaty AS2 SSL w dniu 
+            Wtorek 10 Wrzesień 2024 o godz. 10:00 UTC. Prosimy koniecznie ZMIENIĆ CERTYFIKAT podczas tego okna zmiany, 
+            w przeciwnym razie połączenia z Editel Polska po tej zmianie zakończą się niepowodzeniem.<br><br>
+
+            Poniżej lista adresów URL dla AS2 którego dotyczy problem:<br>
+            http://blsl.edison.pl:2080/ipnet/as2<br>
+            https://blsl.edison.pl:2081/ipnet/as2<br><br>
+            
+            Jaki działania są wymagane w celu zmiany certyfikatu?<br>
+            Jeśli państwo łączą się z Editel Polska (dawniej EDISON) przez AS2 trzeba zmienić certyfikat szyfrowania i podpisywania 
+            AS2 na nową wersję certyfikatu.<br><br>
+            
+            Certyfikat: SSL i AS2 (podpisywanie i szyfrowanie): <a href="#">Pobierz certyfikat</a><br><br>
+
+            Ważne: niespełnienie wyżej wymienionych kroków spowoduje, że nie będą państwo w stanie połączyć się z Editel Polska i 
+            przesłać żadnych dokumentów EDI.<br><br>
+
+            Najczęściej Zadawane Pytania:<br>
+            1) Dlaczego następuje zmiana? <br>
+            Certyfikat SSL środowiska produkcyjnego i testowego EDITEL Polska AS2 wygasa 13 września 2024.<br><br>
+
+            2) Kiedy następuje zmiana certyfikatu?<br>
+            Wtorek 10 września 2024 o godz. 10:00 UTC.<br><br>
+
+            3) Czy mogę to zrobić innym razem?<br>
+            Nie, zmiana musi być dokonana w tym samym czasie.<br><br>
+            
+            4) Widzę błędy, co powinienem zrobić?<br>
+            Upewnij się, że używasz poprawnego szyfrowania i podpisu certyfikatu.<br><br>
+
+            W przypadku jakichkolwiek problemów napotkanych po zmianie certyfikatu prosimy o kontakt z naszym zespołem pomocy technicznej.<br><br>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EDITEL Polska | Dział Techniczny</p>
+    </footer>
+</body>
+</html>
